@@ -1,0 +1,11 @@
+*.class
+*.form
+*.mf
+*.html
+/nbproject
+/build
+
+# Package Files #
+*.jar
+*.war
+*.ear

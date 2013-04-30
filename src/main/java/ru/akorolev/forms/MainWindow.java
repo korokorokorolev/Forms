@@ -26,25 +26,65 @@ public class MainWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jListTrainingFeeds = new javax.swing.JList();
+        jButtonEdit = new javax.swing.JButton();
+        jButtonAddTF = new javax.swing.JButton();
+        jButtonRemTF = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuManagment = new javax.swing.JMenu();
+        jMenuItemTeachersAndSubjects = new javax.swing.JMenuItem();
+        jMenuItemAuditory = new javax.swing.JMenuItem();
         jMenuAnalis = new javax.swing.JMenu();
+        jMenuItemTeachersEmployment = new javax.swing.JMenuItem();
+        jMenuItemAuditoryEmployment = new javax.swing.JMenuItem();
         jMenuService = new javax.swing.JMenu();
-        jMenuAdvantures = new javax.swing.JMenu();
+        jMenuItemPrint = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setText("Учебные потоки:");
+
+        jListTrainingFeeds.setModel(new javax.swing.AbstractListModel() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public Object getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(jListTrainingFeeds);
+
+        jButtonEdit.setText("Редактировать расписание");
+
+        jButtonAddTF.setText("Добавить учебный поток");
+
+        jButtonRemTF.setText("Удалить учебный поток");
+
         jMenuManagment.setText("Управление");
+
+        jMenuItemTeachersAndSubjects.setText("Преподаватели и Предметы");
+        jMenuManagment.add(jMenuItemTeachersAndSubjects);
+
+        jMenuItemAuditory.setText("Аудитории");
+        jMenuManagment.add(jMenuItemAuditory);
+
         jMenuBar1.add(jMenuManagment);
 
         jMenuAnalis.setText("Аналитика");
+
+        jMenuItemTeachersEmployment.setText("Занятость преподавателей");
+        jMenuAnalis.add(jMenuItemTeachersEmployment);
+
+        jMenuItemAuditoryEmployment.setText("Занятость аудиторий");
+        jMenuAnalis.add(jMenuItemAuditoryEmployment);
+
         jMenuBar1.add(jMenuAnalis);
 
         jMenuService.setText("Сервис");
-        jMenuBar1.add(jMenuService);
 
-        jMenuAdvantures.setText("Дополнительно");
-        jMenuBar1.add(jMenuAdvantures);
+        jMenuItemPrint.setText("Подготовить печатный вариант расписания");
+        jMenuService.add(jMenuItemPrint);
+
+        jMenuBar1.add(jMenuService);
 
         setJMenuBar(jMenuBar1);
 
@@ -52,20 +92,51 @@ public class MainWindow extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 285, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1)
+                    .addComponent(jButtonEdit, javax.swing.GroupLayout.DEFAULT_SIZE, 265, Short.MAX_VALUE)
+                    .addComponent(jButtonAddTF, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jButtonRemTF, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 689, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 450, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonEdit)
+                .addGap(33, 33, 33)
+                .addComponent(jButtonAddTF)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonRemTF)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenuAdvantures;
+    private javax.swing.JButton jButtonAddTF;
+    private javax.swing.JButton jButtonEdit;
+    private javax.swing.JButton jButtonRemTF;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JList jListTrainingFeeds;
     private javax.swing.JMenu jMenuAnalis;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItemAuditory;
+    private javax.swing.JMenuItem jMenuItemAuditoryEmployment;
+    private javax.swing.JMenuItem jMenuItemPrint;
+    private javax.swing.JMenuItem jMenuItemTeachersAndSubjects;
+    private javax.swing.JMenuItem jMenuItemTeachersEmployment;
     private javax.swing.JMenu jMenuManagment;
     private javax.swing.JMenu jMenuService;
+    private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }

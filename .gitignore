@@ -4,6 +4,7 @@
 *.html
 /nbproject
 /build
+/target
 
 # Package Files #
 *.jar

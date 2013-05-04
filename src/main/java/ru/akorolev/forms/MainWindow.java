@@ -4,6 +4,14 @@
  */
 package ru.akorolev.forms;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JScrollPane;
+
 /**
  *
  * @author alex
@@ -17,6 +25,68 @@ public class MainWindow extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getjButtonAddTF() {
+        return jButtonAddTF;
+    }
+
+    public JButton getjButtonEdit() {
+        return jButtonEdit;
+    }
+
+    public JButton getjButtonRemTF() {
+        return jButtonRemTF;
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public JList getjListTrainingFeeds() {
+        return jListTrainingFeeds;
+    }
+
+    public JMenu getjMenuAnalis() {
+        return jMenuAnalis;
+    }
+
+    public JMenuBar getjMenuBar1() {
+        return jMenuBar1;
+    }
+
+    public JMenuItem getjMenuItemAuditory() {
+        return jMenuItemAuditory;
+    }
+
+    public JMenuItem getjMenuItemAuditoryEmployment() {
+        return jMenuItemAuditoryEmployment;
+    }
+
+    public JMenuItem getjMenuItemPrint() {
+        return jMenuItemPrint;
+    }
+
+    public JMenuItem getjMenuItemTeachersAndSubjects() {
+        return jMenuItemTeachersAndSubjects;
+    }
+
+    public JMenuItem getjMenuItemTeachersEmployment() {
+        return jMenuItemTeachersEmployment;
+    }
+
+    public JMenu getjMenuManagment() {
+        return jMenuManagment;
+    }
+
+    public JMenu getjMenuService() {
+        return jMenuService;
+    }
+
+    public JScrollPane getjScrollPane1() {
+        return jScrollPane1;
+    }
+
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

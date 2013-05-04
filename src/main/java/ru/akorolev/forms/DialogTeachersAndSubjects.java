@@ -4,6 +4,11 @@
  */
 package ru.akorolev.forms;
 
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JScrollPane;
+
 /**
  *
  * @author alex
@@ -17,6 +22,51 @@ public class DialogTeachersAndSubjects extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
     }
+
+    public JButton getjButtonAddSubject() {
+        return jButtonAddSubject;
+    }
+
+    public JButton getjButtonAddTeacher() {
+        return jButtonAddTeacher;
+    }
+
+    public JButton getjButtonBack() {
+        return jButtonBack;
+    }
+
+    public JButton getjButtonRemSubject() {
+        return jButtonRemSubject;
+    }
+
+    public JButton getjButtonRemTeacher() {
+        return jButtonRemTeacher;
+    }
+
+    public JLabel getjLabel1() {
+        return jLabel1;
+    }
+
+    public JLabel getjLabel2() {
+        return jLabel2;
+    }
+
+    public JList getjListSubjects() {
+        return jListSubjects;
+    }
+
+    public JList getjListTeachers() {
+        return jListTeachers;
+    }
+
+    public JScrollPane getjScrollPane1() {
+        return jScrollPane1;
+    }
+
+    public JScrollPane getjScrollPane2() {
+        return jScrollPane2;
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.

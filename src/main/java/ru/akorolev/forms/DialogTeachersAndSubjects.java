@@ -21,6 +21,7 @@ public class DialogTeachersAndSubjects extends javax.swing.JDialog {
     public DialogTeachersAndSubjects(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        this.setTitle("Преподаватели и предметы");
     }
 
     public JButton getjButtonAddSubject() {

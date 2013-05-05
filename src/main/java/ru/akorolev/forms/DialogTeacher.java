@@ -19,6 +19,7 @@ public class DialogTeacher extends javax.swing.JDialog {
     public DialogTeacher(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        this.setTitle("Добавление преподавателя");
     }
 
     public JButton getjButtonCancel() {

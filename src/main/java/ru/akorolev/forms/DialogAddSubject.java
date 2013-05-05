@@ -4,6 +4,9 @@
  */
 package ru.akorolev.forms;
 
+import javax.swing.JButton;
+import javax.swing.JTextField;
+
 /**
  *
  * @author alex
@@ -16,8 +19,27 @@ public class DialogAddSubject extends javax.swing.JDialog {
     public DialogAddSubject(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        this.setTitle("Добавление нового предмета");
     }
 
+    public JButton getjButtonCancel() {
+        return jButtonCancel;
+    }
+
+    public JButton getjButtonOk() {
+        return jButtonOk;
+    }
+
+    public JTextField getjTextFieldFullName() {
+        return jTextFieldFullName;
+    }
+
+    public JTextField getjTextFieldShortName() {
+        return jTextFieldShortName;
+    }
+
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

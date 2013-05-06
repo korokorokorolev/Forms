@@ -19,6 +19,7 @@ public class DialogAddAuditory extends javax.swing.JDialog {
     public DialogAddAuditory(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        this.setTitle("Добавление новой аудитории");
     }
 
     public JButton getjButtonCancel() {

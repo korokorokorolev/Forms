@@ -19,6 +19,7 @@ public class DialogAuditories extends javax.swing.JDialog {
     public DialogAuditories(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        this.setTitle("Аудитории");
     }
 
     public JButton getjButtonAddAuditory() {
@@ -67,7 +68,7 @@ public class DialogAuditories extends javax.swing.JDialog {
 
         jButtonAddAuditory.setText("Добавить аудиторию");
 
-        jButtonRemAuditory.setText("Удалит аудиторию");
+        jButtonRemAuditory.setText("Удалить аудиторию");
 
         jButtonBack.setText("Назад");
 

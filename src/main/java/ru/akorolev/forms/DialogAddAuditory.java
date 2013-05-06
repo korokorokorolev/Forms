@@ -4,6 +4,9 @@
  */
 package ru.akorolev.forms;
 
+import javax.swing.JButton;
+import javax.swing.JTextField;
+
 /**
  *
  * @author alex
@@ -18,6 +21,19 @@ public class DialogAddAuditory extends javax.swing.JDialog {
         initComponents();
     }
 
+    public JButton getjButtonCancel() {
+        return jButtonCancel;
+    }
+
+    public JButton getjButtonOk() {
+        return jButtonOk;
+    }
+
+    public JTextField getjTextFieldAuditory() {
+        return jTextFieldAuditory;
+    }
+
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

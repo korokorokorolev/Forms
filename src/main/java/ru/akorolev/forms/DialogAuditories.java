@@ -4,6 +4,9 @@
  */
 package ru.akorolev.forms;
 
+import javax.swing.JButton;
+import javax.swing.JList;
+
 /**
  *
  * @author alex
@@ -18,6 +21,23 @@ public class DialogAuditories extends javax.swing.JDialog {
         initComponents();
     }
 
+    public JButton getjButtonAddAuditory() {
+        return jButtonAddAuditory;
+    }
+
+    public JButton getjButtonBack() {
+        return jButtonBack;
+    }
+
+    public JButton getjButtonRemAuditory() {
+        return jButtonRemAuditory;
+    }
+
+    public JList getjListAuditories() {
+        return jListAuditories;
+    }
+
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

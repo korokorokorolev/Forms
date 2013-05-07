@@ -4,6 +4,8 @@
  */
 package ru.akorolev.forms;
 
+import javax.swing.JButton;
+
 /**
  *
  * @author alex
@@ -18,6 +20,52 @@ public class DialogCell extends javax.swing.JDialog {
         initComponents();
     }
 
+    public JButton getjButton12() {
+        return jButton12;
+    }
+
+    public JButton getjButton13() {
+        return jButton13;
+    }
+
+    public JButton getjButton24() {
+        return jButton24;
+    }
+
+    public JButton getjButton34() {
+        return jButton34;
+    }
+
+    public JButton getjButtonAll() {
+        return jButtonAll;
+    }
+
+    public JButton getjButtonCancel() {
+        return jButtonCancel;
+    }
+
+    public JButton getjButtonOk() {
+        return jButtonOk;
+    }
+
+    public Panel4Part getPanel4Part1() {
+        return panel4Part1;
+    }
+
+    public Panel4Part getPanel4Part2() {
+        return panel4Part2;
+    }
+
+    public Panel4Part getPanel4Part3() {
+        return panel4Part3;
+    }
+
+    public Panel4Part getPanel4Part4() {
+        return panel4Part4;
+    }
+
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

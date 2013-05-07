@@ -4,6 +4,11 @@
  */
 package ru.akorolev.forms;
 
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import ru.akorolev.widgets.DayTable;
+
 /**
  *
  * @author alex
@@ -16,8 +21,51 @@ public class DialogRaspisanie extends javax.swing.JDialog {
     public DialogRaspisanie(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        this.setTitle("Расписание");
     }
 
+    public DayTable getDayTable1() {
+        return dayTable1;
+    }
+
+    public DayTable getDayTable2() {
+        return dayTable2;
+    }
+
+    public DayTable getDayTable3() {
+        return dayTable3;
+    }
+
+    public DayTable getDayTable4() {
+        return dayTable4;
+    }
+
+    public DayTable getDayTable5() {
+        return dayTable5;
+    }
+
+    public DayTable getDayTable6() {
+        return dayTable6;
+    }
+
+    public JMenu getjMenu1() {
+        return jMenu1;
+    }
+
+    public JMenu getjMenuAbout() {
+        return jMenuAbout;
+    }
+
+    public JMenuBar getjMenuBar1() {
+        return jMenuBar1;
+    }
+
+    public JMenuItem getjMenuItem1() {
+        return jMenuItem1;
+    }
+
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

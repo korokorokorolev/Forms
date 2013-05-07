@@ -4,6 +4,13 @@
  */
 package ru.akorolev.forms;
 
+import javax.swing.JButton;
+import javax.swing.JList;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JTextField;
+
 /**
  *
  * @author alex
@@ -16,8 +23,51 @@ public class DialogAddTrainingFeed extends javax.swing.JDialog {
     public DialogAddTrainingFeed(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        this.setTitle("Добаление нового учебного потока");
     }
 
+    public JButton getjButtonAddGroup() {
+        return jButtonAddGroup;
+    }
+
+    public JButton getjButtonCancel() {
+        return jButtonCancel;
+    }
+
+    public JButton getjButtonOk() {
+        return jButtonOk;
+    }
+
+    public JButton getjButtonRemGroup() {
+        return jButtonRemGroup;
+    }
+
+    public JList getjListGroups() {
+        return jListGroups;
+    }
+
+    public JMenu getjMenu1() {
+        return jMenu1;
+    }
+
+    public JMenuBar getjMenuBar1() {
+        return jMenuBar1;
+    }
+
+    public JMenuItem getjMenuItem1() {
+        return jMenuItem1;
+    }
+
+    public JMenuItem getjMenuItem2() {
+        return jMenuItem2;
+    }
+
+    public JTextField getjTextFieldTFName() {
+        return jTextFieldTFName;
+    }
+
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -47,11 +97,6 @@ public class DialogAddTrainingFeed extends javax.swing.JDialog {
 
         jLabel2.setText("Учебные группы:");
 
-        jListGroups.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
-        });
         jScrollPane1.setViewportView(jListGroups);
 
         jButtonAddGroup.setText("Добавить учебную группу");
@@ -84,7 +129,7 @@ public class DialogAddTrainingFeed extends javax.swing.JDialog {
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jTextFieldTFName)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(jButtonAddGroup, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
                     .addComponent(jButtonRemGroup, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()

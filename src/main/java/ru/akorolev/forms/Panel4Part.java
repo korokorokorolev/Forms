@@ -4,6 +4,8 @@
  */
 package ru.akorolev.forms;
 
+import javax.swing.JComboBox;
+
 /**
  *
  * @author alex
@@ -17,6 +19,20 @@ public class Panel4Part extends javax.swing.JPanel {
         initComponents();
     }
 
+    public JComboBox getjComboBoxAuditory() {
+        return jComboBoxAuditory;
+    }
+
+    public JComboBox getjComboBoxSubject() {
+        return jComboBoxSubject;
+    }
+
+    public JComboBox getjComboBoxTeacher() {
+        return jComboBoxTeacher;
+    }
+
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

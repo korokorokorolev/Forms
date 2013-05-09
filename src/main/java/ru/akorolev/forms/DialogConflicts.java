@@ -4,6 +4,9 @@
  */
 package ru.akorolev.forms;
 
+import javax.swing.JButton;
+import javax.swing.JList;
+
 /**
  *
  * @author alex
@@ -19,6 +22,28 @@ public class DialogConflicts extends javax.swing.JDialog {
         this.setTitle("Конфликтные ситуации");
     }
 
+    public JButton getjButtonBack() {
+        return jButtonBack;
+    }
+
+    public JButton getjButtonToConflicts() {
+        return jButtonToConflicts;
+    }
+
+    public JButton getjButtonToNoConflict() {
+        return jButtonToNoConflict;
+    }
+
+    public JList getjListConflicts() {
+        return jListConflicts;
+    }
+
+    public JList getjListNoConflicts() {
+        return jListNoConflicts;
+    }
+
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

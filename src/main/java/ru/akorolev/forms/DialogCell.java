@@ -5,6 +5,9 @@
 package ru.akorolev.forms;
 
 import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JMenuItem;
 
 /**
  *
@@ -64,6 +67,55 @@ public class DialogCell extends javax.swing.JDialog {
         return panel4Part4;
     }
 
+    public JButton getjButtonTest() {
+        return jButtonTest;
+    }
+
+    public JLabel getjLabelTest() {
+        return jLabelTest;
+    }
+
+    public JList getjListAudChEmpl() {
+        return jListAudChEmpl;
+    }
+
+    public JList getjListAudChFreedom() {
+        return jListAudChFreedom;
+    }
+
+    public JList getjListAudZnFreedom() {
+        return jListAudZnFreedom;
+    }
+
+    public JList getjListTeachersChEmpl() {
+        return jListTeachersChEmpl;
+    }
+
+    public JList getjListTeachersChFreedom() {
+        return jListTeachersChFreedom;
+    }
+
+    public JList getjListTeachersZnEmpl() {
+        return jListTeachersZnEmpl;
+    }
+
+    public JList getjListTeachersZnFreedom() {
+        return jListTeachersZnFreedom;
+    }
+
+    public JMenuItem getjMenuItemAuditories() {
+        return jMenuItemAuditories;
+    }
+
+    public JMenuItem getjMenuItemTeachers() {
+        return jMenuItemTeachers;
+    }
+
+    public JList getjListAudZnEmpl() {
+        return jListAudZnEmpl;
+    }
+
+     
     
     
     /**
@@ -92,6 +144,35 @@ public class DialogCell extends javax.swing.JDialog {
         jButton34 = new javax.swing.JButton();
         jButtonOk = new javax.swing.JButton();
         jButtonCancel = new javax.swing.JButton();
+        jButtonTest = new javax.swing.JButton();
+        jLabelTest = new javax.swing.JLabel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel2 = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jListTeachersChEmpl = new javax.swing.JList();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jListAudChEmpl = new javax.swing.JList();
+        jPanel3 = new javax.swing.JPanel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jListTeachersChFreedom = new javax.swing.JList();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jListAudChFreedom = new javax.swing.JList();
+        jTabbedPane3 = new javax.swing.JTabbedPane();
+        jPanel5 = new javax.swing.JPanel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jListTeachersZnEmpl = new javax.swing.JList();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jListAudZnEmpl = new javax.swing.JList();
+        jPanel6 = new javax.swing.JPanel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jListTeachersZnFreedom = new javax.swing.JList();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jListAudZnFreedom = new javax.swing.JList();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItemTeachers = new javax.swing.JMenuItem();
+        jMenuItemAuditories = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -117,6 +198,106 @@ public class DialogCell extends javax.swing.JDialog {
 
         jButtonCancel.setText("Отменить");
 
+        jButtonTest.setText("Проверить");
+
+        jLabelTest.setText("Результат проверки");
+
+        jScrollPane2.setViewportView(jListTeachersChEmpl);
+
+        jScrollPane3.setViewportView(jListAudChEmpl);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2)))
+        );
+
+        jTabbedPane1.addTab("Занятые Преподаватели и Аудитории по числителю", jPanel2);
+
+        jScrollPane4.setViewportView(jListTeachersChFreedom);
+
+        jScrollPane5.setViewportView(jListAudChFreedom);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE)
+                    .addComponent(jScrollPane4)))
+        );
+
+        jTabbedPane1.addTab("Свободные Преподаватели и аудитории по числителю", jPanel3);
+
+        jScrollPane6.setViewportView(jListTeachersZnEmpl);
+
+        jScrollPane7.setViewportView(jListAudZnEmpl);
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane7, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE)
+                    .addComponent(jScrollPane6)))
+        );
+
+        jTabbedPane3.addTab("Занятые Преподаватели и Аудитории по знаменателю", jPanel5);
+
+        jScrollPane8.setViewportView(jListTeachersZnFreedom);
+
+        jScrollPane9.setViewportView(jListAudZnFreedom);
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addComponent(jScrollPane8, javax.swing.GroupLayout.DEFAULT_SIZE, 260, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane9, javax.swing.GroupLayout.DEFAULT_SIZE, 151, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 239, Short.MAX_VALUE)
+                    .addComponent(jScrollPane8)))
+        );
+
+        jTabbedPane3.addTab("Свободные Преподаватели и аудитории по знаменателю", jPanel6);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -132,7 +313,7 @@ public class DialogCell extends javax.swing.JDialog {
                         .addContainerGap()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(panel4Part1, javax.swing.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
+                                .addComponent(panel4Part1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -167,7 +348,15 @@ public class DialogCell extends javax.swing.JDialog {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jButtonOk, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(390, 390, 390)
-                        .addComponent(jButtonCancel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jButtonCancel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jButtonTest)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabelTest, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jTabbedPane1)
+                        .addGap(45, 45, 45)
+                        .addComponent(jTabbedPane3)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -205,7 +394,15 @@ public class DialogCell extends javax.swing.JDialog {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(36, 36, 36)
                         .addComponent(jButton34)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 251, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButtonTest)
+                    .addComponent(jLabelTest))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTabbedPane1)
+                    .addComponent(jTabbedPane3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButtonOk)
                     .addComponent(jButtonCancel))
@@ -213,6 +410,21 @@ public class DialogCell extends javax.swing.JDialog {
         );
 
         jScrollPane1.setViewportView(jPanel1);
+
+        jMenu1.setText("Управление");
+
+        jMenuItemTeachers.setText("Преподаватели и предметы");
+        jMenu1.add(jMenuItemTeachers);
+
+        jMenuItemAuditories.setText("Аудитории");
+        jMenu1.add(jMenuItemAuditories);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("О прграмме");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -222,9 +434,7 @@ public class DialogCell extends javax.swing.JDialog {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 499, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jScrollPane1)
         );
 
         pack();
@@ -238,12 +448,43 @@ public class DialogCell extends javax.swing.JDialog {
     private javax.swing.JButton jButtonAll;
     private javax.swing.JButton jButtonCancel;
     private javax.swing.JButton jButtonOk;
+    private javax.swing.JButton jButtonTest;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabelTest;
+    private javax.swing.JList jListAudChEmpl;
+    private javax.swing.JList jListAudChFreedom;
+    private javax.swing.JList jListAudZnEmpl;
+    private javax.swing.JList jListAudZnFreedom;
+    private javax.swing.JList jListTeachersChEmpl;
+    private javax.swing.JList jListTeachersChFreedom;
+    private javax.swing.JList jListTeachersZnEmpl;
+    private javax.swing.JList jListTeachersZnFreedom;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItemAuditories;
+    private javax.swing.JMenuItem jMenuItemTeachers;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane jTabbedPane2;
+    private javax.swing.JTabbedPane jTabbedPane3;
     private ru.akorolev.forms.Panel4Part panel4Part1;
     private ru.akorolev.forms.Panel4Part panel4Part2;
     private ru.akorolev.forms.Panel4Part panel4Part3;

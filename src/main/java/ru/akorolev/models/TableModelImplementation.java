@@ -4,6 +4,7 @@
  */
 package ru.akorolev.models;
 
+import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
@@ -29,7 +30,7 @@ public class TableModelImplementation extends AbstractTableModel{
         this.data = data;
         fireTableDataChanged();
     }
-
+    
     public TableModelImplementation(String[] columnNames) {
         this.columnNames = columnNames;
         fireTableDataChanged();

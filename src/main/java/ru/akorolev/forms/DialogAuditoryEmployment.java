@@ -4,6 +4,9 @@
  */
 package ru.akorolev.forms;
 
+import javax.swing.JComboBox;
+import javax.swing.JTable;
+
 /**
  *
  * @author alex
@@ -18,6 +21,40 @@ public class DialogAuditoryEmployment extends javax.swing.JDialog {
         initComponents();
     }
 
+    public JComboBox getjComboBoxAuditory() {
+        return jComboBoxAuditory;
+    }
+
+    public JComboBox getjComboBoxChZn() {
+        return jComboBoxChZn;
+    }
+
+    public JTable getjTable1() {
+        return jTable1;
+    }
+
+    public JTable getjTable2() {
+        return jTable2;
+    }
+
+    public JTable getjTable3() {
+        return jTable3;
+    }
+
+    public JTable getjTable4() {
+        return jTable4;
+    }
+
+    public JTable getjTable5() {
+        return jTable5;
+    }
+
+    public JTable getjTable6() {
+        return jTable6;
+    }
+
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -30,7 +67,7 @@ public class DialogAuditoryEmployment extends javax.swing.JDialog {
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jComboBoxTeacher = new javax.swing.JComboBox();
+        jComboBoxAuditory = new javax.swing.JComboBox();
         jLabel2 = new javax.swing.JLabel();
         jComboBoxChZn = new javax.swing.JComboBox();
         jLabel3 = new javax.swing.JLabel();
@@ -58,11 +95,9 @@ public class DialogAuditoryEmployment extends javax.swing.JDialog {
 
         jLabel1.setText("Аудитория:");
 
-        jComboBoxTeacher.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
         jLabel2.setText("Числитель или знаменатель:");
 
-        jComboBoxChZn.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Числитель", "Знаменатель", "Числитель и знаменатель" }));
+        jComboBoxChZn.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Числитель", "Знаменатель" }));
 
         jLabel3.setText("Понедельник:");
 
@@ -164,7 +199,7 @@ public class DialogAuditoryEmployment extends javax.swing.JDialog {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBoxTeacher, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jComboBoxAuditory, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(18, 18, 18)
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -193,7 +228,7 @@ public class DialogAuditoryEmployment extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jComboBoxTeacher, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jComboBoxAuditory, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel2)
                         .addComponent(jComboBoxChZn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel1))
@@ -244,8 +279,8 @@ public class DialogAuditoryEmployment extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox jComboBoxAuditory;
     private javax.swing.JComboBox jComboBoxChZn;
-    private javax.swing.JComboBox jComboBoxTeacher;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
